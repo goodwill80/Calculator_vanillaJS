@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  margin: 0
+  padding: 0;
+}
+
+.title {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 50px;
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+
+.display-panel {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 428px;
+  height: 100px;
+  background: black;
+  color: white;
+  border-radius: 5px;
+  position: relative;
+}
+
+.brand {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 10px;
+  color: yellow;
+}
+
+.display {
+  margin-right: 20px;
+}
+
+.upper-display {
+  font-size: 20px;
+}
+
+.lower-display {
+  font-size: 2rem;
+}
+
+button {
+  width: 107px;
+  height: 80px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+button:last-child {
+  background: blue;
+  color: white;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 5px;
+}
+
+.clear-container {
+  display: flex;
+}
+
+button.clear {
+  width: 230px;
+  background: orange;
+  color: white;
+}
+
+button.delete {
+  width: 200px;
+}
+
+button.operator, .decimal {
+  background: darkGrey;
+  color: white;
+  font-size: 30px;
+}
